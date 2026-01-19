@@ -15,12 +15,16 @@ body {
 } 
  
 /* header */ 
-.header {
-    width: 100%; 
+.header { 
+    
+    width: 100%;  
+    border: 1px solid #412567;
+
     padding: 16px 0;
-    background: linear-gradient(90deg, #2b004f, #1a0033);
+    background-color: #1A0B2E; 
+
 } 
-.container {
+ .header .container {
     max-width: 1200px; 
     margin: auto;     
     padding: 0 20px; 
@@ -104,7 +108,7 @@ body {
 .hero {
     position: relative;
     height: 100vh;
-    background: radial-gradient(circle at center, #2b0050 0%, #0b0014 70%);
+    background-color: #1A0B2E; 
     overflow: hidden;
 }
 
@@ -197,3 +201,77 @@ body {
     border: 1px solid #ff4ecd;
     color: #fff;
 }
+
+.about-section {
+  background-color: #1A0B2E;
+  padding: 100px 20px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* About Text */
+.about-content h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  max-width: 800px;
+  margin: 0 auto 12px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #cbd5f5;
+}
+
+/* Divider */
+.techwave-divider {
+  width: 100%;
+  height: 1px;
+  margin: 50px 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #4fd1ff,
+    transparent
+  );
+  position: relative;
+  opacity: 0.8;
+}
+
+.techwave-divider::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #4fd1ff;
+  filter: blur(8px);
+  opacity: 0.4;
+}
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+
+
+.stat-box h3 {
+  font-size: 32px;
+  color: #6dffb3;
+  
+}
+
+.stat-box span {
+  font-size: 14px;
+  color: #b3b9ff;
+}
+
+
