@@ -1,0 +1,86 @@
+* {
+    font-family: 'poppins' , sans-serif;
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'poppins' , sans-serif;
+
+}  
+
+body {
+    background-color: #1A0B2E;
+} 
+ 
+/* header */ 
+.header {
+    width: 100%; 
+    padding: 16px 0;
+    background: linear-gradient(90deg, #2b004f, #1a0033);
+} 
+.container {
+    max-width: 1200px; 
+    margin: auto;     
+    padding: 0 20px; 
+    display: flex;  
+    align-items: center; 
+    justify-content: space-between;
+}  
+
+ /* Logo (Text Logo)  */
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  
+} 
+    /* TECH = SOLID WHITE */
+.logo .tech {
+  color: #ffffff;
+}
+
+/* WAVE = PINK–PURPLE–YELLOW GRADIENT */
+.logo .wave {
+  background: linear-gradient(
+    135deg,
+    #ff4ecd 0%,
+    #b96cff 45%,
+    #ffd36a 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 12px rgba(255, 78, 205, 0.45),
+    0 0 24px rgba(185, 108, 255, 0.35);
+}
+
+
+/* Navigation */
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ddd;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #7cffcb;
+}
+
+/* Button */
+.btn {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+  background: linear-gradient(90deg, #ff4ecd, #7cffcb);
+  color: #000;
+  font-weight: 600;
+}
