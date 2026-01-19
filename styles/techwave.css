@@ -83,4 +83,117 @@ body {
   background: linear-gradient(90deg, #ff4ecd, #7cffcb);
   color: #000;
   font-weight: 600;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0b0014;
+    color: #fff;
+}
+
+
+
+/* ================= HERO ================= */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: radial-gradient(circle at center, #2b0050 0%, #0b0014 70%);
+    overflow: hidden;
+}
+
+/* wave */
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+/* CENTER COLUMN */
+.hero-center {
+    position: absolute;
+    top: 50%;                      /*  wave center */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;        /* vertical stack */
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    z-index: 5;
+}
+
+/* CIRCLE + MIC */
+.hero-visual {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.hero-circle {
+    width: 360px;
+    filter: drop-shadow(0 0 80px rgba(255, 78, 205, 0.7));
+}
+
+.hero-mic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    transform: translate(-50%, -50%);
+}
+
+/* TEXT */
+.hero-title {
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #cfc9ff;
+    max-width: 620px;
+}
+
+/* BUTTONS (VERTICAL) */
+.hero-buttons {
+    display: flex;
+    flex-direction: row;   /* ✅ flex obosthai */
+    gap: 14px;
+    margin-top: 10px;
+}
+
+/* BUTTON STYLE */
+.btn {
+    display: flex;              
+    justify-content: center;
+    gap: 10px;
+    width: 220px;
+    padding: 12px 0;
+    border-radius: 24px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;  
+    
+    
+}
+
+.btn.primary {
+    background: linear-gradient(135deg, #ff4ecd, #7cffcb);
+    color: #000;
+}
+
+.btn.outline {
+    background: transparent;
+    border: 1px solid #ff4ecd;
+    color: #fff;
 }
